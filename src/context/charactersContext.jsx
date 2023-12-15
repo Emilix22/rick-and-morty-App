@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from "react";
-import {useNavigate} from 'react-router-dom'
 
 export const CharactersContext = createContext();
 
@@ -11,8 +10,6 @@ export const CharactersContextProvider = ({ children }) => {
     const [actualPage, setActualPage] = useState(1);
     const [prevPage, setPrevPage] = useState(null);
     const [nextPage, setNextPage] = useState(null);
-
-    const history = useNavigate()
 
     useEffect(() => {
         fetch('https://rickandmortyapi.com/api/character')
@@ -55,18 +52,6 @@ export const CharactersContextProvider = ({ children }) => {
         })
     }
 
-    const goToInfo = (id) => {
-
-        history(`/info/${id}`)
-            
-    }
-
-    const back = () => {
-
-        history("/")
-            
-    }
-
     return (
         <CharactersContext.Provider value={{
             characters,
@@ -76,8 +61,6 @@ export const CharactersContextProvider = ({ children }) => {
             prevPage,
             nextPage,
             goToPage,
-            goToInfo,
-            back
 
         }}>
             {children}

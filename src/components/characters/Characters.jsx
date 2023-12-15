@@ -2,8 +2,6 @@ import { React, useContext } from 'react'
 import { CharactersContext } from '../../context/charactersContext'
 import Card from '../card/Card'
 import Pagination from '../pagination/Pagination'
-import InfoCharacter from '../infoCharacter/InfoCharacter'
-import { Routes, Route } from 'react-router-dom'
 import "./Characters.css"
 
 
@@ -12,8 +10,7 @@ function Characters() {
     const { characters } = useContext(CharactersContext)
 
     return (
-        <Routes>
-            <Route path='/' element={
+        
                 <>
                     <Pagination />
                     <div className='characters_container'>
@@ -32,13 +29,7 @@ function Characters() {
                             })
                         }
                     </div>
-                </>} 
-            />
-            <Route path='/info/:id' element={<InfoCharacter />} />
-
-        </Routes>
-        
-        
+                </>
     )
 }
 
