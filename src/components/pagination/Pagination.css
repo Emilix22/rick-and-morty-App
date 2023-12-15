@@ -1,0 +1,25 @@
+.pagination_container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.butons_pagination {
+    display: flex;
+    gap: 5px;
+}
+
+.butons_pagination button {
+    width: 60px;
+    border-radius: 3px;
+    background-color: #526e2dff;
+    color: #fafd7cff;
+    font-weight: bold;
+    padding: 3px;
+}
+.butons_pagination select {
+    border-radius: 4px;
+    border: solid 1px #24325fff;
+}

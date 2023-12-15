@@ -1,0 +1,11 @@
+.card {
+    border: solid 1px #24325fff;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #69c8ecff;
+}
+
+.card img {
+    border-radius: 6px;
+    cursor: pointer;
+}
