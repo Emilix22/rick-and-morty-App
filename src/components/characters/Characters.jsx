@@ -23,6 +23,11 @@ function Characters() {
                                     name={character.name}
                                     status={character.status}
                                     species={character.species}
+                                    type={character.type}
+                                    gender={character.gender}
+                                    origin={character.origin.name}
+                                    location={character.location.name}
+                                    episodes={character.episode.length}
                                     id={character.id}
                                     />
                                 )

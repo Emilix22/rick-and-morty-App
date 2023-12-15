@@ -7,5 +7,16 @@
 
 .card img {
     border-radius: 6px;
-    cursor: pointer;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: left;
+    padding: 20px 0px;
+}
+.card_body {
+    padding: 3px;
+    border-radius: 6px;
 }
